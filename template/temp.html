@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<body>
+
+<h1>My Web Page</h1>
+
+<p>Hello everybody!</p>
+
+<p>Translate this page:</p>
+
+<div id="google_translate_element"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<p>You can translate the content of this page by selecting a language in the select box.</p>
+<div id="mydiv" data-geocode='{{ geocode|tojson }}'>...</div>
+<!-- Then access it in a static JavaScript file like so:
+
+// Raw JavaScript
+var geocode = JSON.parse(document.getElementById("mydiv").dataset.geocode); -->
+<!-- Employees unhappy with NPS set to approach 7th Pay Commission!
+They plan to individually and collectively send responses to the commission opposing the continuation of the New Pension Scheme.
+
+UserId
+DPSC vs NPS
+It is low-cost, tax-efficient plan to which both employees and employers contribute.
+
+Latest(img_name="user-2.jpg",title_post="National Pension System: Conditions for partial withdrawal, how to apply",descri_post = "National Pension System (NPS) is a market linked, defined contribution product administered by the Pension Fund Regulatory and Development Authority (PFRDA) to offer affordable social security to citizens.",first_name = "Pranav",last_name = "Khamkar")
+
+UserId
+National Pension System: Conditions for partial withdrawal, how to apply
+National Pension System (NPS) is a market linked, defined contribution product administered by the Pension Fund Regulatory and Development Authority (PFRDA) to offer affordable social security to citizens.
+→
+Add Your Own Post!
+
+UserID
+df ssdfsdf sdf sdf sadf
+asf asdfsf dsfs ol; l;,;l ;lkmk kmmk ,,m n ijii iuinkl m km -->
+
+</body>
+</html>

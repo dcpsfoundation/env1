@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static',filename='application.css')}}">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="	https://unpkg.com/axios@0.24.0/dist/axios.min.js"></script>
+     <script defer src="{{ url_for('static',filename='application.js')}}"></script>
+   </head>
+<body>
+  <div class="container2">
+  <div class="container">
+    <div class="title">Application Form </div>
+    <h4>Personal Details </h4>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">User Id</span>
+            <input type="text" class="userid" id="username" placeholder="Enter REGISTERED user id" required>
+          </div>
+          <div class="input-box2">
+            <span class="details">Password</span>
+            <input type="password" class="passwordId" id="password" placeholder="Enter REGISTERED password" required>
+          </div>
+          <div class="input-box">
+            <span class="details">First's Name</span>
+            <input type="text" class="fname"  placeholder="Enter first name" required>
+          </div>
+          
+          <div class="input-box">
+            <span class="details">Middle Name</span>
+            <input type="text" class="mname"  placeholder="Enter middle name" required>
+          </div>
+          
+          <div class="input-box">
+            <span class="details">Last Name</span>
+            <input type="text" class="lname"  placeholder="Enter Last name" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Father's/Hushband Name</span>
+            <input type="text" class="fatherhusband"  placeholder="Enter  name" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Mother's Name</span>
+            <input type="text" class="mother"  placeholder="Enter  name" required>
+          </div>
+          
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="email" class="email_id"  placeholder="Enter your email" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="number" class="phone"  placeholder="Enter your number" pattern="[1-9]{1}[0-9]{9}" required><br><br>
+          </div>
+
+          <div class="input-box">
+            <span class="details"> Alternate Phone Numbers</span>
+            <input type="number" class="alt_phone"  placeholder="Enter Phone Number" pattern="[1-9]{1}[0-9]{9}" required><br><br>
+          </div>
+        
+          <div class="input-box">
+            <span class="details">Aadhar Number</span>
+            <input type="number" class="aadhar"  placeholder="Enter Aadhar Number" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Date of Birth</span>
+            <input type="date" class="dateOB"  placeholder="dd-mm-yyyy" required>
+          </div>
+
+          <div class="input-box">
+            <label>Gender</label>
+            <select class="gender" required>
+                <option disabled selected>Select gender</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Others</option>
+            </select>
+        </div> 
+
+        <div class="input-box">
+          <label>Marital  Status</label>
+          <select class="marital" required>
+              <option disabled selected>Select Status</option>
+              <option>married</option>
+              <option>unmarried</option>
+              <option>others</option>
+          </select>
+      </div>
+     
+  
+
+  
+  <div class="input-box">
+    <span class="details">Pan No</span>
+    <input type="tel" class="pan"  placeholder="Enter Pan Number" required><br><br>
+  </div>
+  
+      <div class="input-box">
+        <label>Cast Category</label>
+        <select class="cast" required>
+            <option disabled selected>Select Cast</option>
+            <option>GENERAL</option>
+            <option>OBC</option>
+            <option>ST</option>
+            <option>SC</option>
+            <option>Others</option>
+
+        </select>
+    </div>
+
+    <div class="input-box">
+      <label>Blood Group</label>
+      <select class="blood" required>
+          <option disabled selected>Select Group</option>
+          <option>A+</option>
+          <option>A-</option>
+          <option>B+</option>
+          <option>B-</option>
+          <option>AB-</option>
+          <option>AB+</option>
+          <option>O+</option>
+          <option>O-</option>
+      </select>
+  </div>
+ 
+  <div class="input-box">
+    <label>Qualification</label>
+    <select class="qualification" required>
+        <option disabled selected>Select Group</option>
+        <option>10th/12th</option>
+        <option>graduation</option>
+        <option>Post-Graduation</option>
+        <option>phD</option>
+        <option>Others</option>
+    </select>
+</div>
+
+<div class="input-box">
+  <span class="details">Address 1</span>
+  <input type="text" class="address_one"  placeholder="Enter Address" required>
+</div>
+
+<div class="input-box">
+  <span class="details">Address 2</span>
+  <input type="text" class="address_two"  placeholder="Enter Address" >
+</div>
+<div class="input-box">
+  <label>State</label>
+    <select class="state" required>
+        <option disabled selected>Select State</option>
+    </select>
+</div>
+<div class="input-box">
+  <label>District</label>
+    <select class="district" required>
+        <option disabled selected>Select District</option>
+    </select>
+</div>
+<div class="input-box">
+  <span class="details">Pin Code </span>
+  <input type="number" class="pin"  placeholder="Enter Pin" required>
+</div>
+<div class="input-box2">
+  
+</div>   
+<div class="input-box2">
+  <h3> Job Details</h3>
+</div>
+<div class="input-box2">
+
+</div>
+   <div class="input-box">
+    <label>Job Type</label>
+    <select class="job" required>
+        <option disabled selected>Select Type</option>
+        <option>Goverment</option>
+        <option>Semigoverment</option>
+        <option>Private</option>
+  </select>
+  </div>
+      
+<div class="input-box">
+  <label>Department Type</label>
+  <select class="department" required>
+      <option disabled selected>Select Type</option>
+      <option>Education</option>
+      <option>Health</option>
+      <option>Revenue</option>
+      <option>Land Record</option>
+      <option>Agricultural</option>
+      <option>Excise</option>
+      <option>Police</option>
+      <option>Social Welefare</option>
+      <option>Sports</option>
+      <option>Law</option>
+      <option>Public works</option>
+</select>
+</div>
+
+<div class="input-box">
+  <label>Appointment Type</label>
+  <select class="appointment" required>
+      <option disabled selected>Select Type</option>
+      <option>Probation</option>
+      <option>Permanent</option>
+      <option>ShikhanSevak</option>
+      <option>Trainee Period</option>
+      
+</select>
+</div> 
+
+<div class="input-box">
+  <span class="details">Appointment Date</span>
+  <input type="date" class="appointDate"  placeholder="dd/mm/yyyy" required>
+</div>
+
+<div class="input-box">
+  <span class="details">Retirement Date</span>
+  <input type="date" class="retireDate" placeholder="dd/mm/yyyy" required>
+</div>
+
+<div class="input-box">
+  <label>Member of any Others union</label>
+  <select class="member" required>
+      <option disabled selected>Select Type</option>
+      <option>Yes</option>
+      <option>NO</option>
+</select>
+</div>
+
+<div class="formbold-mb-3">
+  <label for="upload" class="formbold-form-label">
+    Upload Photo
+  </label>
+  <input
+    type="file"
+    name="upload"
+    id="upload"
+    class="formbold-form-input formbold-form-file imgName"
+  />
+</div>
+        </div>
+        <div class="button">
+          <input type="button" class="submit" value="submit">
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

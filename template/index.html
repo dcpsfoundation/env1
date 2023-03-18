@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css')}}">
+    <script defer src="	https://unpkg.com/axios@0.24.0/dist/axios.min.js"></script>
+
+    <script type="module" defer src="{{ url_for('static',filename='script.js')}}"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navigation">
+                <div class="logo">
+                    
+                </div>
+                <div class="nav__buttons">
+                    <div class="btn__home">
+                        <h2 class="nav__link" href="#home">Home</h2>
+                    </div>
+                    <div class="btn__about">
+                        <h2 class="nav__link" href="#about">About</h2>
+                    </div>
+                    <div class="btn__form nav__link" >
+                        <h2 class="form__open">Application Form</h2>
+
+                    </div>
+                    <div class="btn__contacts">
+                        <h2 class="nav__link" href="#contacts">Contacts</h2>
+
+                    </div>
+                </div>
+                <div class="login__register">
+                    
+                    <div class="btn__register">
+                    <h2><a id="regi" href="{{ url_for('static',filename='/register')}}">Register</a></h2>
+                    </div>
+                    <div class="line"></div>
+                    <div class="btn__login">
+                    <h2>Login</h2>
+                    </div>
+                    
+                </div>
+            </div>    
+        </nav>
+    </header>
+    <main>
+        <div id="home">
+            <div class="slider">
+                <div class="slide">
+                    <div class="testimonial">
+                        <h5 class="testimonial__header">WELCOME TO DCPS NPS</h5>
+                        <h4><pre>                  EMPLOYESS’S FOUNDATION</pre></h4>
+                        <blockquote class="testimonial__text">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Humble appeal and humble request to all DCPS / NPS holders in India. You have organized various fronts, different types of agitation through different organizations. At various levels, even From the Chief Minister to the Prime Minister, correspondence was discussed. But for the last 2-3 years we have been struggling for our old pensions in a fair way. Thousands of families are lying on the horizon, it is a misunderstanding if someone comes and leaves you with an old pension. Now everyone should come in and meditate and think about it.Old pensions are possible only if all unions fight together. The only idea behind establishing an organization is to provide old pension to the DCPS / NPS holders and keep the heirs struggling till they are compensated by providing financial assistance to the deceased employees. We will also be supporting employees who are struggling within the country and on the border who cannot organize. <pre></pre>
+                        <div class="right_arrow">&LongRightArrow;</div>                           
+                        
+
+                        </blockquote>
+                        
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="testimonial">
+                        <h5 class="testimonial__header">
+                        The last step to becoming a complete minimalist
+                        </h5>
+                        <blockquote class="testimonial__text">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All the organizations have done remarkable work till date. Stay in the organization you are in, but everyone should come together as well and humbly request and urge all the office bearers and DPS / NPS holders that, as a start, we should fast for one day at a time in front of the Tehsil / Collector office all over the country at the same time. All the unions of your district should attend and make a single statement and submit the name and signature of the office bearers and give it to the Tahsildar / Collector in the hands of the women representative.
+                        Now we will come together and give the message to the media and the governors that they are going to fight together. There is no doubt that our mission is going to be a success if we take our families along with us in this national movement. A humble appeal to old pensioners is just a fight.  <pre></pre>
+                        <div class="right_arrow">&LongRightArrow;</div>
+                        
+
+                        </blockquote>
+                        
+                    </div>
+                </div>
+
+                <!-- <div class="slide">
+                    <div class="testimonial">
+                        <h5 class="testimonial__header">
+                        Finally free from old-school banks
+                        </h5>
+                        <blockquote class="testimonial__text">
+                        All the unions of your district should attend and make a single statement and submit the name and signature of the office bearers and give it to the Tahsildar / Collector in the hands of the women representative.
+Now we will come together and give the message to the media and the governors that they are going to fight together. There is no doubt that our mission is going to be a success if we take our families along with us in this national movement. A humble appeal to old pensioners is just a fight.
+
+                        </blockquote>
+                        <address class="testimonial__author">
+                        <img src="img/user-3.jpg" alt="" class="testimonial__photo" />
+                        <h6 class="testimonial__name">Francisco Gomes</h6>
+                        <p class="testimonial__location">Lisbon, Portugal</p>
+                        </address>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div id="about">
+            <div class="about">
+                <img src="{{ url_for('static',filename='img/user-3.jpg')}}" alt="" class="testimonial__photo about__photo" />
+                <img src="{{ url_for('static',filename='img/user-2.jpg')}}" alt="" class="testimonial__photo about__photo" />
+                <img src="{{ url_for('static',filename='img/user-1.jpg')}}" alt="" class="testimonial__photo about__photo" />
+            </div>
+            <div class="about">
+                <h6 class="testimonial__name about__name">President </h6>
+                <h6 class="testimonial__name about__name">Vice President</h6>
+                <h6 class="testimonial__name about__name">Founder</h6>
+            </div>
+
+            <div class="about">
+                <h1>
+                    All DCPS-NPS officers / employees are welcome on the "DCPS-NPS Employess's Foundation" website. 
+The main purpose of launching this website is for the officers / employees joining the state government service. Newly launched National Pension Scheme by the Government It is to be identified. It is hoped that this website will be useful in facilitating NPS procedures.
+                </h1>
+                <img src="{{ url_for('static',filename='about.png')}}" alt="" class="about__img" />
+
+            </div>
+            <div class="about">
+                <div class="readMore">
+                    <h1>What is DCPS or NPS?</h1>
+                </div>
+            </div>
+        </div>
+        <div id="feedback" class="feedback" >
+            <div class="latest__slider" id="dataId">
+                <div class="latest__slide">
+                    <div class="latest__label">
+                        <h1>Latest</h1>
+                        <h1>News</h1>
+                    </div>
+                </div>
+                
+                <!-- <div class="latest__slide">
+                    <div class="latest__testimonial">
+                        <address class="latest__testimonial__author">
+                            <img src="{{ url_for('static',filename='img/user-1.jpg')}}" alt="" class="latest__testimonial__photo" />
+                            <h6 class="latest__testimonial__name">UserId</h6>
+                        </address>
+                        <h5 class="latest__testimonial__header">Employees unhappy with NPS set to approach 7th Pay Commission!</h5>
+                        <blockquote class="latest__testimonial__text">
+                        They plan to individually and collectively send responses to the commission opposing the continuation of the New Pension Scheme.
+                        </blockquote>
+                        
+                    </div>
+                </div>
+                <div class="latest__slide">
+                    <div class="latest__testimonial">
+                        <address class="latest__testimonial__author">
+                            <img src="{{ url_for('static',filename='img/user-2.jpg')}}" alt="" class="latest__testimonial__photo" />
+                            <h6 class="latest__testimonial__name">UserId</h6>
+                        </address>
+                        <h5 class="latest__testimonial__header">
+                        DPSC vs NPS
+                        </h5>
+                        <blockquote class="latest__testimonial__text">
+                        It is low-cost, tax-efficient plan to which both employees and employers contribute.
+                        
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="latest__slide">
+                    <div class="latest__testimonial">
+                        <address class="latest__testimonial__author">
+                            <img src="{{ url_for('static',filename='img/user-3.jpg')}}" alt="" class="latest__testimonial__photo" />
+                            <h6 class="latest__testimonial__name">UserId</h6>
+                        </address>
+                        <h5 class="latest__testimonial__header">
+                        National Pension System: Conditions for partial withdrawal, how to apply
+                        </h5>
+                        <blockquote class="latest__testimonial__text">
+                        National Pension System (NPS) is a market linked, defined contribution product administered by the Pension Fund Regulatory and Development Authority (PFRDA) to offer affordable social security to citizens. 
+                        </blockquote>
+                        
+                    </div>
+                </div> -->
+                <button class="slider__btn latest__slider__btn--left hidden">&larr;</button>
+                <button class="slider__btn latest__slider__btn--right">&rarr;</button>
+                <div class="addPost">
+                        <h2>Add Your Own Post!</h2>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+    <footer class="footer" id="contacts">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#about">About</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Pricing</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Terms of Use</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#contacts">Contact Us</a>
+        </li>
+      </ul>
+      <img src="{{ url_for('static',filename='Logo og 1 EPS.png')}}" alt="Logo" class="footer__logo" />
+      <p class="footer__copyright">
+        &copy; Copyright by
+        Ved Awate
+      </p>
+    </footer>
+    <div class="modal2 hidden">
+        <h2 id="full_name">User: Ved Niranjan Awate</h2>
+        <h2 id="address_bar">From: Shirala, Sangli, maharashtra</h2>
+        <div class="logout"><h1>LogOut</h1></div>
+    </div>
+    <div class="modal hidden">
+        <div class="background">
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+    <form>
+        <div class="close">
+            <button class="btn--close-modal">&times;</button>
+        </div>
+        <div class="loginlogo">
+        </div>
+        <div class="containerlogin">
+          <h3>Login Here</h3>
+
+        <label for="username">Username</label>
+        <input type="text" placeholder="Email or Phone" id="username">
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password">
+        <a href="{{ url_for('static',filename='/forget?')}}"> forgot password? </a>
+  
+        <button class="modal__btn__login">Log In</button>
+        <h4>If not have account then, <a href="{{ url_for('static',filename='/register')}}"> register</a></h4>    
+        </div>
+        
+    </form>
+    </div>
+    <div class="overlay hidden"></div>
+    <div class="modal hidden add__post">
+        <form method="POST" action="/home" enctype="multipart/form-data">
+            <div class="close">
+                <button class="btn--close-modal">&times;</button>
+            </div>
+            <div class="formbold-mb-3">
+
+                <label for="myfile" class="formbold-form-label">Select Image IF ANY: </label>
+                <input type="file" id="myfile" name="myfile"  class="formbold-form-input formbold-form-file" accept="image/*" >
+            </div>
+
+            <label for="myfile">Title: </label>
+            <input type="text" id="myfile2" name="myfile2">
+            <label for="myfile">Description: </label>
+            <textarea id="w3review" name="w3review" rows="6" cols="66.5"></textarea>
+            <br>
+            <button id="add_post__btn" type="button">Submit</button>
+        </form>
+    </div>
+    <div class="modal hidden add__post scroller">
+        <div class="close">
+            <button class="btn--close-modal">&times;</button>
+        </div>
+        <h1>All DCPS-NPS Officers / Employees are welcome on the “DCPS-NPS Employess’ Foundation” website.</h1>
+<h1>main objective of launching this website is to identify the newly launched National Pension Scheme by the State Government for the officers / employees of the State Government. Also, we hope this website will be helpful in facilitating the NPS process. </h1>
+
+<h1>For the Officers / Employees who have joined the state government service on or after 01/11/2005 through the Government defined Contribution Pension Scheme (DCPS) Was applied.</h1>
+<h2>GR link : <a href="https://www.maharashtra.gov.in/site/Upload/Government%20Resolutions/Marathi/201504061206329105.pdf" target="_blank">https://www.maharashtra.gov.in/site/Upload.../Marathi/201504061206329105.pdf</a> </h2>
+<h2>The following office procedures are in place for the implementation of the National Retirement Scheme (NPS)...</h2>
+ 
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forget password</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='forget.css')}}">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("4QCg_6ueNuFADc6Zr");
+   })();
+</script>
+    <!-- <script defer src="https://smtpjs.com/v3/smtp.js"></script> -->
+    <script defer src="{{ url_for('static',filename='forget.js')}}"></script>
+</head>
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <form>
+        <div class="loginlogo">
+          
+        </div>
+        <div class="containerlogin">
+          <h3>Forget Password</h3>
+
+        <label for="username">Username or Email</label>
+        <input type="text" placeholder="Email or Phone" id="username">
+
+        <label for="Email">Email</label>
+        <input type="text" placeholder="Enter valid Email" id="email_id">
+        <div class="btn_verify">
+            <input type="submit" value="Verify" required>
+        </div>  
+  
+        <button class="submit">Submit</button>
+  
+        </div>
+        
+    </form>
+</body>
+</html>

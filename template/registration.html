@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static',filename='registrationStyle.css')}}">
+    <title>Registration</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="{{ url_for('static',filename='jquery-3.6.4.min.js')}}"></script>
+    <script defer src="{{ url_for('static',filename='registration.js')}}"></script>
+  </head>
+<body>
+  <div class="container">
+    <div class="title">Registration Here  </div>
+    <div class="content">
+      <form action="/home">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" class="name" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Username</span>
+            <input type="text" class="username" placeholder="Enter your username" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="email" class="email" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="tel" class="phone" placeholder="Enter your number" pattern="[1-9]{1}[0-9]{9}" required>
+            <div class="verify">
+              <input type="submit" class="btn_verify" value="Verify" required>
+            </div>
+          </div>
+        <div class="input-box">
+            <span class="details">Password</span>
+            <input type="password" class="password" placeholder="Enter your password" required>
+         </div>
+        <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="text" class="confirm" placeholder="Confirm your password" required>
+          </div>
+          <div class="input-box">
+            <label>State</label>
+            <select class="state" required>
+                <option disabled selected>Select State</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <label>District</label>
+            <select class="district" required>
+                <option disabled selected>Select District</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Date of Birth</span>
+            <input type="date" class="dateOfBirth" placeholder="Enter your birth" required>
+          </div>
+          <div class="input-box">
+            <label>Gender</label>
+            <select class="gender" required>
+                <!-- <option disabled selected>Select gender</option> -->
+                <option>Male</option>
+                <option>Female</option>
+                <option>Others</option>
+            </select>
+        </div> 
+        </div>
+       
+        <div class="button button_register">
+          <input type="submit" class="register" value="Register">
+        </div>
+        <h4>If already have account then, <a href="/home#modal_open" id="login__click"> log in</a></h4>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

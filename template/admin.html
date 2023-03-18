@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="{{ url_for('static',filename='admin.css')}}">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script defer src="{{ url_for('static',filename='admin.js')}}"></script>
+    </head>
+    <body>
+        <div class="container">
+            <br><br>
+            <div class="title">Admin Log IN</div>
+            <br>
+            <div class="content">
+            <form action="#">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Secret ID</span>
+                        <input type="text" class="secret_id"  placeholder="Enter ID" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Secret Key</span>
+                        <input type="password" class="secret_key"  placeholder="Enter Key" required>
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="button" class="submit" value="submit">
+                </div>
+            </form>
+            </div>
+        </div>
+        
+    </body>
+</html>
